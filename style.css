@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 65px;
+  justify-content: space-between;
+}
+.heading,
+.desc-left {
+  margin: 25px 30px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "PT serif", sans-serif;
+  letter-spacing: -0.03em;
+}
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "PT serif", sans-serif;
+  margin-bottom: 5px;
+}
+.desc-left > p {
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.team-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 70px auto 80px auto;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 75px;
+}
+.image-container:nth-child(2),
+.image-container:nth-child(5) {
+  position: relative;
+  top: 75px;
+}
+.image-container > span {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  writing-mode: vertical-lr;
+  font-size: 10px;
+  line-height: 13px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.image-container > p {
+  font-weight: 600;
+  line-height: 21px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
+}
+img {
+  display: block;
+  width: 350px;
+  height: auto;
+  box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 13px;
+  }
+  .pic1 {
+    margin-bottom: 0;
+  }
+  .pic3 {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  .pic5 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .description {
+    margin-left: 55px;
+    margin-bottom: 0;
+  }
+  .heading {
+    margin-left: 20px;
+  }
+  .team-cards {
+    margin-top: 20px;
+  }
+  .image-container:nth-child(2),
+  .image-container:nth-child(4) {
+    position: relative;
+    top: 75px;
+  }
+  .image-container:nth-child(6) {
+    position: relative;
+    top: 120px;
+  }
+  img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .image-container:nth-child(2),
+  .image-container:nth-child(4) {
+    position: relative;
+    top: 75px;
+  }
+  .image-container:nth-child(6) {
+    position: relative;
+    top: 120px;
+  }
+}
